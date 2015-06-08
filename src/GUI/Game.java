@@ -1,7 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package GUI;
 
 
@@ -27,11 +24,10 @@ import javax.swing.JFrame;
 
 
 
-////////////////////////////////////////////////////////////////////////////////
-//*******TEST CLASS*************************************************************
+
 
 /**
- *
+ * This is the Chess Game Applet
  * @author thapaliya
  */
 public class Game extends JApplet implements WindowListener 
@@ -84,8 +80,6 @@ public class Game extends JApplet implements WindowListener
         this.restartBt.restart=(RestartListener)new ChessRestartListener(this.gamePlay,this);
        // this.sidebar.restart.addActionListener(new RestartListener(this.gamePlay, this));
        // this.add(this.sidebar, BorderLayout.EAST);
-        
-       
         this.removeMouseListener(menu);
         this.removeMouseMotionListener(menu);
         this.addMouseListener(this.listener);
@@ -185,7 +179,7 @@ public class Game extends JApplet implements WindowListener
         System.out.println("Window Deactivated");
     }
      
-    
+    //*****Main that spawns the Chess Applet ******************************************************//
     public static void main(String[]args)
     {
         int w,h;
